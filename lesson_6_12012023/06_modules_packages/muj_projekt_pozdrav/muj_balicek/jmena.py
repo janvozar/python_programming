@@ -1,0 +1,1 @@
+uzivatelska_jmena = {"Matous", "Petr", "Lukas"}
