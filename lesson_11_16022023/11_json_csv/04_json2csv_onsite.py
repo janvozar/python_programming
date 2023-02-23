@@ -13,12 +13,13 @@ def hlavni():
 
 def json_to_csv(soubor, zadouci_klice):
     slovniky = nacti_obsah_jsnu(soubor)
-   
-    
+
     vyfiltrovane = []
 
     for slovnik in slovniky:
         vyfiltrovane.append(filtruj_klice(zadouci_klice, slovnik))
+    
+    zapis_do_csv("vysledky.csv", vyfiltrovane)
 
 def nacti_obsah_jsnu(soubor):
     try:
